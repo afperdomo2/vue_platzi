@@ -12,7 +12,7 @@
     <div id="app" class="col-md-12" v-bind:style="{ background: '#' + color }">
       <img v-on:mouseover="toggleShowPrices" v-on:mouseout="toggleShowPrices" v-bind:src="img" v-bind:alt="name" width="50">
       <h1 v-bind:class="changePercent > 0 ? 'text-success' : 'text-danger'">
-        {{ name }}
+        {{ title }}
         <!-- <span v-if="changePercent > 0">🟢</span>
         <span v-else-if="changePercent < 0">🔻</span>
         <span v-else>🔵</span> -->
