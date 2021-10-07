@@ -20,6 +20,8 @@
         <span v-show="changePercent < 0">👎</span>
         <span v-show="changePercent == 0">👵</span> -->
       </h1>
+      <input type="number" v-model="value" class="form-control form-control-sm col-md-4 mb-2">
+      <span>${{ value }} es igual a: {{ convertedValue }} Bitcoin</span><br>
       <button class="btn btn-sm btn-success" v-on:click="toggleShowPrices">{{ showPrices == true ? 'Ocultar' : 'Ver' }} precios 👁</button>
       <!-- <ul>
         <li v-for="(price, index) in prices" v-bind:key="price">
